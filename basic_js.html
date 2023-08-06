@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic javaScript Version</title>
+    <style>
+        body{
+            padding: 30px 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #formdata{
+            width: 350px;
+            margin: auto;
+            padding: 15px;
+            border: 2px solid red;
+        }
+        label{
+            display: block;
+        }
+    </style>
+    <script src="basic_js.js" defer></script>
+</head> 
+<body>
+    <h1>Contact Form</h1>
+    <form action="processor.php" method="post" id="myform">
+        <p>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" required class="dataFrom">
+        </p>
+        <p>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" required class="dataFrom">
+        </p>
+        <p>
+            <label for="url" id="url-label" >Website</label>
+            <input type="url" id="url" name="url" class="dataFrom" required>
+        </p>
+        <p>
+            <label for="comments" id="comments-label">Comments</label>
+            <textarea name="comments"   id="comments" cols="40" rows="10" class="dataFrom"></textarea>
+        </p>
+        <p><input type="submit" name="send" id="send" value="send it"></p>
+    </form>
+    <div id="formdata"></div>
+</body>
+</html>

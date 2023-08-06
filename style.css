@@ -1,0 +1,75 @@
+body{
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background-color: #efefef;
+}
+#page{
+    margin: auto;
+    width: 340px;
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+#contactForm input,label,textarea{display: block;}
+label{ margin-bottom: 5px;}
+input, textarea {
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.submitBtn{
+    box-shadow: inset 0px 1px 0px 1px #f5978e;
+    background-color: #B51515;
+    border-radius: 6px;
+    border: 1px solid #d02718;
+    display: inline-block;
+    cursor: pointer;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #810e05;
+}
+.submitBtn:hover{
+    background-color: #c62d1f;
+}
+.submitBtn:active{
+    position: relative;
+    top: 1px;
+}
+#message{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    color: #fff;
+}
+.error{background: #B51515; padding:10px;}
+.success{background: rgba(82, 162, 20, 1.00); padding: 10px;}
+.preloader img{
+    width: 70px;
+    height: 70px;
+    padding-top:200px;
+    display: block;
+    margin: auto;
+}
+.hide-message{display: none;}
+.show-message{display: block;}
+#message h3{color: #fff;}
+.fadeOutElement{
+    animation: fadeout 1.5s;
+}
+@keyframes fadeout {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
